@@ -1,0 +1,88 @@
+<link rel="stylesheet" href=
+        "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="profile.style.client.css">
+<script src=
+                "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+</script>
+
+<div class="container">
+
+    <div class="wbdv-message">
+        <div class="btn-success alertFld">
+            Profile successfully saved
+        </div>
+    </div>
+
+    <div class="wbdv-Profile-page">
+        <h3>Profile</h3>
+    </div>
+
+    <form>
+        <div class="form-group row wbdv-field wbdv-username">
+            <label for="usernameFld" class="col-sm-2 col-form-label">
+                Username </label>
+            <div class="col-sm-10">
+                <input class="form-control"
+                       id="usernameFld"
+                       placeholder="Username" disabled>
+            </div>
+        </div>
+
+        <div class="form-group row wbdv-field wbdv-phone">
+            <label for="phoneFld" class="col-sm-2 col-form-label">
+                Phone </label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control"
+                       id="phoneFld" placeholder="Type your phone number">
+            </div>
+        </div>
+
+        <div class="form-group row wbdv-field wbdv-email">
+            <label for="emailFld" class="col-sm-2 col-form-label">
+                Email </label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control"
+                       id="emailFld" placeholder="Type your email">
+            </div>
+        </div>
+
+        <div class="form-group row wbdv-field wbdv-role">
+            <label for="roleFld" class="col-sm-2 col-form-label">
+                Role </label>
+            <div class="col-sm-10">
+                <select id="roleFld" class="form-control">
+                    <option>Faculty</option>
+                    <option>Student</option>
+                    <option>Admin</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group row wbdv-field wbdv-dob">
+            <label for="dobFld" class="col-sm-2 col-form-label">
+                Date of Birth </label>
+            <div class="col-sm-10">
+                <input class="form-control" type="date"
+                       value="2019-09-14" id="dobFld">
+            </div>
+        </div>
+
+        <div class="form-group row wbdv-button wbdv-update">
+            <label class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <button class="btn btn-primary btn-block"
+                        id="updateBtn">Update</button>
+            </div>
+        </div>
+
+        <div class="form-group row wbdv-button wbdv-logout">
+            <label class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <button class="btn btn-danger btn-block"
+                        id="logoutBtn"
+                        onclick="window.location.href='http://localhost:8080/login/login.template.client.html?#';">Logout</button>
+            </div>
+        </div>
+
+    </form>
+</div>
