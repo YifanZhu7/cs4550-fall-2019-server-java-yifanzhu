@@ -1,0 +1,113 @@
+<link rel="stylesheet" href=
+        "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href=
+        "course-editor.style.client.css">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5af0749612.js"></script>
+
+<nav class="navbar-toggler navbar-expand-lg navbar-dark bg-dark">
+    <button class="wbdv-course-editor wbdv-close"
+            onclick="window.location.href='/'">X
+    </button>
+    <a class="col-3.5 navbar-brand wbdv-course-title" href="#">CS4550 - WebDev</a>
+    <a class="col-1 text-light">Build</a>
+    <a class="col-1 text-light bg-primary wbdv-page-tab">Pages</a>
+    <a class="col-1 text-light">Theme</a>
+    <a class="col-1 text-light">Store</a>
+    <a class="col-1 text-light">Apps</a>
+    <a class="col-2 text-light">Settings</a>
+    <button class="col-1 wbdv-new-page-btn">+</button>
+
+</nav>
+
+<div class="row">
+    <div class="col-4 wbdv-module-list">
+        <div class="list-group wbdv-module-item" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active wbdv-module-item-title" id="module1-list"
+               data-toggle="list"
+               href="#list-module1" role="tab" aria-controls="1">Module1 - jQuery
+                <div align="right">
+                    <button class="wbdv-module-item-delete-btn">X</button>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action wbdv-module-item-title" id="module2-list"
+               data-toggle="list"
+               href="#list-module2" role="tab" aria-controls="2">Module2 - React
+                <div align="right">
+                    <button class="wbdv-module-item-delete-btn">X</button>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action wbdv-module-item-title" id="module3-list"
+               data-toggle="list"
+               href="#list-module3" role="tab" aria-controls="3">Module3 - Redux
+                <div align="right">
+                    <button class="wbdv-module-item-delete-btn">X</button>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action wbdv-module-item-title" id="module4-list"
+               data-toggle="list"
+               href="#list-module4" role="tab" aria-controls="4">Module4 - Native
+                <div align="right">
+                    <button class="wbdv-module-item-delete-btn">X</button>
+                </div>
+            </a>
+        </div>
+        <div align="right">
+            <button class="wbdv-module-item-add-btn">+</button>
+        </div>
+    </div>
+    <div class="col-8">
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-module1" role="tabpanel" aria-labelledby="module1-list">
+                <div class="col">
+                    <div class="wbdv-topic-pill-list">
+                        <button class="wbdv-topic-pill">Topic 1</button>
+                        <button class="wbdv-topic-pill">Topic 2</button>
+                        <button class="wbdv-topic-pill">Topic 3</button>
+                        <button class="wbdv-topic-pill">Topic 4</button>
+                        <button class="wbdv-topic-add-btn">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade show" id="list-module2" role="tabpanel" aria-labelledby="module2-list">
+                <div class="col">
+                    <div class="wbdv-topic-pill-list">
+                        <button class="wbdv-topic-pill">Topic 1</button>
+                        <button class="wbdv-topic-pill">Topic 2</button>
+                        <button class="wbdv-topic-pill">Topic 3</button>
+                        <button class="wbdv-topic-add-btn">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade show" id="list-module3" role="tabpanel" aria-labelledby="module3-list">
+                <div class="col">
+                    <div class="wbdv-topic-pill-list">
+                        <button class="wbdv-topic-pill">Topic 1</button>
+                        <button class="wbdv-topic-add-btn">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade show" id="list-module4" role="tabpanel" aria-labelledby="module4-list">
+                <div class="col">
+                    <div class="wbdv-topic-pill-list">
+                        <button class="wbdv-topic-pill">Topic 1</button>
+                        <button class="wbdv-topic-pill">Topic 2</button>
+                        <button class="wbdv-topic-pill">Topic 3</button>
+                        <button class="wbdv-topic-pill">Topic 4</button>
+                        <button class="wbdv-topic-add-btn">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
